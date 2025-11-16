@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Links</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: #879192;
+      color: #333;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    header img {
+      width: 250px;
+      margin-bottom: 10px;
+      border-radius: 3px;
+      //box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      animation: fadeInDown 1s ease;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 250px;
+    }
+
+    .link-btn {
+      padding: 14px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: all 0.3s ease;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.7s forwards;
+    }
+
+    /* Social media colors */
+    .facebook { background: #1877f2; color: white; animation-delay: 0.2s; }
+    .instagram { background: linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7); color: white; animation-delay: 0.4s; }
+    .whatsapp { background: #25d366; color: white; animation-delay: 0.6s; }
+    .tiktok { background: #000; color: white; animation-delay: 0.8s; }
+    .snapchat { background: #fffc00; color: #000; animation-delay: 1s; }
+
+    .link-btn:hover {
+      transform: scale(1.08);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+   <img src="copy.png" alt="Banner Image">
+  </header>
+
+  <div class="links">
+    <a class="link-btn facebook" href="https://www.facebook.com/share/1CXiyJ9JDj/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+    <a class="link-btn instagram" href="https://www.instagram.com/butik_karol?utm_source=qr&igsh=MTZyb2hvbXd2aG45MQ%3D%3D" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+    <a class="link-btn whatsapp" href="https://wa.me/970592191942" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+  </div>
+</body>
+</html>
